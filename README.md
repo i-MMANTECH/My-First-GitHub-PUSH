@@ -28,6 +28,15 @@ Replace it with:
 "tailwindcss-animate": "^1.0.7",
 ```
 
+> ⚠️ **Watch the version number.** Don't just rename the package and leave `^2.3.7` — that version of `tailwindcss-animate` does not exist and `npm install` will fail with:
+>
+> ```
+> npm error code ETARGET
+> npm error notarget No matching version found for tailwindcss-animate@^2.3.7.
+> ```
+>
+> The `tailwindcss-animate` package's latest release is in the **1.x** line (currently `1.0.7`). Use `^1.0.7`.
+
 ### Step 2 — Edit `tailwind.config.js`
 
 Find the last line:
